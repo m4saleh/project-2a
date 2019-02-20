@@ -5,7 +5,7 @@ class Child extends Component {
 state = {
     cross:false,
     // uncross:'false'
-    crossClass: ""
+    crossClass: "uncross"
     }
 
 
@@ -21,9 +21,11 @@ state = {
 // }
 
 
+
+
     checkLine = () => {
         //call up the cross
-        if (this.state.crossClass === ""){
+        if (this.state.crossClass === "uncross"){
             //give css for cross when cross false
             this.setState({ 
                 cross: false, 
@@ -33,12 +35,13 @@ state = {
             //when cross true take this css
             this.setState({ 
                 cross: true, 
-                crossClass: ""
+                crossClass: "uncross"
             })
         }
 
         
     }
+   
     // clearOneList = (number)=>{
     //     // this.setState(this.listArray.remove(number));
     //     // this.listArray
@@ -55,7 +58,6 @@ state = {
                 <input  type="checkbox" className="check"  onChange={ this.checkLine} />
                 {this.props.text}
                 <bytton type="reset" value="Reset" className="redX" onClick={() => this.props.deleteList(this.props.index)}>✕</bytton >
-                
             </div >
         );
     }
