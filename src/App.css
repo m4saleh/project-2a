@@ -22,9 +22,9 @@
     margin: 2% 2% 2% 31%;
     height: 44px;
 }
-.redX{
+.buttonX{
       color: red;
-    margin: 0% 0% 0% 1%;
+    margin: 0% 0% 0% 20%;
 }
 .uncross{
          color: black;
@@ -73,7 +73,7 @@
     height: 20px;
 }
 .check{
-      margin: 0% 1% 0% 0%;
+      margin: 0% 66% 0% 0%;
   /* padding: 10px;
   border: 1px solid black;
   margin-left: 10px */

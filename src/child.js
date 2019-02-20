@@ -54,11 +54,15 @@ state = {
     render() {
 
         return (
+            <div>
+            <input type="checkbox" className="check" onChange={this.checkLine} ></input>
             <div className={this.state.crossClass}>
-                <input  type="checkbox" className="check"  onChange={ this.checkLine} />
+                
+                
                 {this.props.text}
-                <bytton type="reset" value="Reset" className="redX" onClick={() => this.props.deleteList(this.props.index)}>✕</bytton >
+                <bytton type="reset" value="Reset" className="buttonX" onClick={() => this.props.deleteList(this.props.index)}>✕</bytton >
             </div >
+            </div>
         );
     }
 }
