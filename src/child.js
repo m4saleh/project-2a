@@ -60,7 +60,7 @@ state = {
                 
                 
                 {this.props.text}
-                <bytton type="reset" value="Reset" className="buttonX" onClick={() => this.props.deleteList(this.props.index)}>✕</bytton >
+                <button type="reset" value="Reset" className="buttonX" onClick={() => this.props.deleteList(this.props.index)}>✕</button >
             </div >
             </div>
         );
