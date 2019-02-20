@@ -61,7 +61,10 @@ state = {
                 
                 {this.props.text}
                 <button type="reset" value="Reset" className="buttonX" onClick={() => this.props.deleteList(this.props.index)}>✕</button >
+
             </div >
+                <button type="reset" value="Reset" className="clearAllComplit" onClick={() => this.props.deleteList(this.props.index)}>Clear All Comp</button>
+
             </div>
         );
     }
